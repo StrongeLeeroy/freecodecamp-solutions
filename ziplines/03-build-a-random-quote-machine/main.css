@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+body {
+	font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+}
+
+h2 {
+	margin-top: 30px;
+	text-align: center;
+	font-weight: 300;
+	font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+}
+
+.panel {
+	transition: 0.2s;
+}
+
+.panel:hover {
+	background-color: #FAFAFA;
+}
+
+.quote {
+	text-align: justify;
+	font-style: italic;
+}
+
+.author {
+	text-align: right;
+	font-weight: 600;
+}
+
+.new-quote {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.new-quote:focus {
+	outline: none;
+}
