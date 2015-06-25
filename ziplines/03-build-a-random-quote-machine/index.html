@@ -4,33 +4,39 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/foundation.css" />
 	<link rel="stylesheet" href="main.css">
+	<script src="http://platform.twitter.com/widgets.js"></script>
 	<title>Random Quote Machine</title>
 </head>
 <body>
-	<div class="row">
-		<div class="small-12 columns">
-			<h2>Random quotes gallore!</h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="small-3 small-centered columns">
-			<button type="button" class="small round button expand new-quote">Random Quote</button>
-		</div>
-	</div>
-	<div class="row">
-		<div class="small-6 small-offset-3 columns">
-			<div class="panel">
-				<p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure excepturi laborum quae harum provident voluptates doloribus magni eius dolor, quo quis optio similique hic, pariatur nisi, et blanditiis, quam corporis.</p>
-				<p class="author">-Lorem Ipsum</p>
-			</div>
-		</div>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-	<script src="app.js"></script>
+    <div class="row">
+      <div class="small-12 columns">
+        <h2>Random quotes gallore!</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-3 small-centered columns">
+        <button type="button" class="small round button expand new-quote">Random Quote</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 small-offset-3 columns">
+        <div class="panel">
+          <p class="quote"></p>
+          <p class="author"></p>
+          <div id="tweetBtn">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="">Tweet</a>
+  			<script>
+  				!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+      <script>
+        $(document).foundation();
+      </script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -30,7 +30,26 @@ function chooseRandom(min, max) {
 
 function printQuote(){
 	var randomQuote = chooseRandom(0, quoteCollection.length - 1);
-	console.log(quoteCollection[randomQuote].quote);
+  var tweetText = truncateQuote(quoteCollection[randomQuote].quote) + ' (by ' + quoteCollection[randomQuote].author + ')';
+  console.log(tweetText);
 	$('.quote').text(quoteCollection[randomQuote].quote);
 	$('.author').text('-' + quoteCollection[randomQuote].author);
+  $('.twitter-share-button').attr('data-text', tweetText);
+  
+    $('iframe').remove();
+    var tweetBtn = $('<a></a>')
+        .addClass('twitter-share-button')
+        .attr('href', 'http://twitter.com/share')
+        .attr('data-url', 'http://www.gorkahernandez.com')
+        .attr('data-text', tweetText);
+    $('#tweetBtn').append(tweetBtn);
+    twttr.widgets.load();
+}
+
+function truncateQuote(quote){
+  if (quote.length > 80){
+    return quote.substr(0, 80).trim() + '...';
+  } else {
+    return quote;
+  }
 }
