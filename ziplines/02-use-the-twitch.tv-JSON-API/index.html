@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Twitch.tv JSON API</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+          <div role="tabpanel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
+              <li role="presentation"><a href="#online" aria-controls="online" role="tab" data-toggle="tab">Online</a></li>
+              <li role="presentation"><a href="#offline" aria-controls="offline" role="tab" data-toggle="tab">Offline</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="form-group has-feedback search">
+                  <input type="text" placeholder="Search...">
+              </div>
+              <div role="tabpanel" class="tab-pane fade in active" id="all">
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="online"></div>
+              <div role="tabpanel" class="tab-pane fade" id="offline"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
