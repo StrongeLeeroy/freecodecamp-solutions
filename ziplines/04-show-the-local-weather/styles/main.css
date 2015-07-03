@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body {
+	font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+}
+
+.weather-widget {
+	background-color: #f3f3f3;
+	border: 1px solid black;
+	border-radius: 10px;
+}

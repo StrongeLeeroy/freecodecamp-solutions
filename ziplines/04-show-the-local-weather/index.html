@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/foundation.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<title>Local Weather</title>
+</head>
+<body>
+	<div class="row">
+		<div class="small-12 columns">
+			<h3 class="text-center">Local Weather</h3>
+		</div>
+		<div class="row">
+			<div class="small-12">
+				<h4 class="text-center city-name"></h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-4 columns weather-widget">
+				<h5 class="text-center">Temperature</h5>
+				<div class="row">
+					<div class="small-12 columns">
+						Current Temperature<br>
+						<span class="current-temp"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-6 columns">
+						Max. Temp.<br>
+						<span class="max-temp"></span>
+					</div>
+					<div class="small-6 columns">
+						Min. Temp.<br>
+						<span class="min-temp"></span>
+					</div>
+				</div>
+			</div>
+			<div class="small-4 columns weather-widget">
+				<h5 class="text-center">Weather</h5>
+			</div>
+			<div class="small-4 columns weather-widget">
+				<h5 class="text-center">Wind</h5>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+</body>
+</html>
